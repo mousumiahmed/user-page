@@ -104,7 +104,7 @@ const useStyles = (theme => ({
                             {
                                 this.state.userData.map((val,index)=>{
                                     return(
-                                        <Grid item  xs={12} sm={6} lg={4} >
+                                        <Grid item  xs={12} sm={6} md={4} lg={4} >
                                             <Paper className={classes.paper}>
                                             <CardActionArea>
                                             <CardMedia
@@ -141,7 +141,7 @@ const useStyles = (theme => ({
                             this.state.userData.map((val,index)=>{
                                 if(this.state.username === val.first_name ||this.state.username === val.last_name ||this.state.username===val.email){
                                     return(
-                                        <Grid item  xs={12} sm={6} lg={4} >
+                                        <Grid item  xs={12} sm={6} md={4} lg={4} >
                                             <Paper className={classes.paper}>
                                             <CardActionArea>
                                             <CardMedia
