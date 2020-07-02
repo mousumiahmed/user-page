@@ -54,8 +54,7 @@ class SearchBar extends Component {
                         Value={this.state.username}
                         placeholder="Search by either first_name/last_name/email"
                         onChange={this.onchangeUserName}                    
-                    />
-                        
+                    />                       
                 </Paper>
                 <DisplayPage username={this.state.username}/>
             </div>

@@ -88,30 +88,30 @@ const useStyles = (theme => ({
                                     return(
                                         <Grid item  xs={12} sm={6} md={4} lg={4} >
                                             <Paper className={classes.paper}>
-                                            <CardActionArea>
-                                            <CardMedia
-                                            className={classes.media}
-                                            component="img"
-                                            alt="Image Not Found"
-                                            height="140"
-                                            image={val.avatar}
-                                            title="Image"
-                                            />
-                                            <CardContent className={classes.fontstyle}>
-                                            <Typography variant="h5" component="h2">
-                                                {val.first_name}<span style={{marginLeft:"3%"}}></span>{val.last_name}
-                                            </Typography>
-                                            <p variant="body1" color="textSecondary" >
-                                                {val.email}
-                                            </p>
-                                            </CardContent>
-                                        </CardActionArea>
-                                    </Paper>
+                                                <CardActionArea>
+                                                    <CardMedia
+                                                    className={classes.media}
+                                                    component="img"
+                                                    alt="Image Not Found"
+                                                    height="140"
+                                                    image={val.avatar}
+                                                    title="Image"
+                                                    />
+                                                    <CardContent className={classes.fontstyle}>
+                                                    <Typography variant="h5" component="h2">
+                                                        {val.first_name}<span style={{marginLeft:"3%"}}></span>{val.last_name}
+                                                    </Typography>
+                                                    <p variant="body1" color="textSecondary" >
+                                                        {val.email}
+                                                    </p>
+                                                    </CardContent>
+                                                </CardActionArea>
+                                                </Paper>
+                                        </Grid>
+                                 ) })
+                                }
                             </Grid>
-                       ) })
-                     }
-                    </Grid>
-                </div>                   
+                    </div>                   
                      {this.state.totalResults > 6 && this.state.currentMovie == null ? <Pagination pages={numberPages} changePage={this.changePage} currentPage={this.state.currentPage}/> : ''}
                 </div>
             )
@@ -126,30 +126,30 @@ const useStyles = (theme => ({
                                     return(
                                         <Grid item  xs={12} sm={6} md={4} lg={4} >
                                             <Paper className={classes.paper}>
-                                            <CardActionArea>
-                                            <CardMedia
-                                            className={classes.media}
-                                            component="img"
-                                            alt="Image Not Found"
-                                            height="140"
-                                            image={val.avatar}
-                                            title="Image"
-                                            />
-                                            <CardContent className={classes.fontstyle}>
-                                            <Typography variant="h5" component="h2">
-                                                {val.first_name}<span style={{marginLeft:"3%"}}></span>{val.last_name}
-                                            </Typography>
-                                            <Typography variant="body1" component="p">
-                                                {val.email}
-                                            </Typography>
-                                            </CardContent>
-                                        </CardActionArea>
-                                    </Paper>
-                            </Grid>
-                            )
-                                }
-                             })
-                        }
+                                                <CardActionArea>
+                                                    <CardMedia
+                                                    className={classes.media}
+                                                    component="img"
+                                                    alt="Image Not Found"
+                                                    height="140"
+                                                    image={val.avatar}
+                                                    title="Image"
+                                                    />
+                                                    <CardContent className={classes.fontstyle}>
+                                                    <Typography variant="h5" component="h2">
+                                                        {val.first_name}<span style={{marginLeft:"3%"}}></span>{val.last_name}
+                                                    </Typography>
+                                                    <Typography variant="body1" component="p">
+                                                        {val.email}
+                                                    </Typography>
+                                                    </CardContent>
+                                                </CardActionArea>
+                                            </Paper>
+                                        </Grid>
+                                        )
+                                        }
+                                    })
+                                 }
                      </Grid>
                     </div>                   
                  </div> 
